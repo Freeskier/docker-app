@@ -5,9 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
-        builder =>
+        build =>
         {
-            builder
+            build
                 .AllowAnyHeader()
                 .AllowAnyOrigin()
                 .AllowAnyMethod();
@@ -16,7 +16,9 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-app.MapGet("/asd", () => "Hello Worlsd!");
+app.MapGet("/asd", () => "Hello Worlsdsadasdsadasdas!");
+
+app.MapGet("/", () => "Hello Word!");
 
 app.UseCors(MyAllowSpecificOrigins);
 
