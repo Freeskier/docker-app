@@ -1,22 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import styles from './app.module.scss';
+import Particles from './Components/particles/Particles';
+import Waves from './Components/waves/Waves';
 
 function App() {
-  const [count, setCount] = useState("");
-  fetch("http://localhost:5001/asd")
-    .then((resp) => resp.text())
-    .then((t) => setCount(t));
+  const [count, setCount] = useState('');
 
   return (
-    <div>
-      yoyas
-      <br />
-      {count}
-      <div className="dupa">sad</div>1<div className="daupaasd">asd</div>
-      <div className="daupa">sadsadas</div>
-      <div className="daupa">sad</div>
-      <div className="daupa">sad </div>
+    <div className={styles.container}>
+      <Particles />
+      <Waves />
     </div>
   );
 }

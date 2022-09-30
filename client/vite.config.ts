@@ -1,5 +1,6 @@
-import { defineConfig, loadEnv } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig, loadEnv } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
@@ -15,6 +16,11 @@ export default defineConfig(({ command, mode }) => {
       //   }
       // }
     },
-    plugins: [react()]
-  }
-})
+    plugins: [react()],
+    css: {
+      modules: {
+        generateScopedName: '[name]_[local]_[hash:base64:5]',
+      },
+    },
+  };
+});
