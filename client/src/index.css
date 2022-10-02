@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -54,7 +56,7 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
