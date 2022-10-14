@@ -62,3 +62,8 @@ C:\Users\Emil\Desktop\docker-app\server\src\API\obj\Debug\net6.0\API.genruntimec
 C:\Users\Emil\Desktop\docker-app\server\src\API\obj\Debug\net6.0\ref\API.dll
 C:\Users\Emil\Desktop\docker-app\server\src\API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Emil\Desktop\docker-app\server\src\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Emil\Desktop\docker-app\server\src\API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Emil\Desktop\docker-app\server\src\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Emil\Desktop\docker-app\server\src\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Emil\Desktop\docker-app\server\src\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Emil\Desktop\docker-app\server\src\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
