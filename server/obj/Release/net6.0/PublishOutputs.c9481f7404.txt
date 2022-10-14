@@ -1,7 +1,0 @@
-C:\Users\Emil\Desktop\docker-app\server\out\server.exe
-C:\Users\Emil\Desktop\docker-app\server\out\appsettings.Development.json
-C:\Users\Emil\Desktop\docker-app\server\out\appsettings.json
-C:\Users\Emil\Desktop\docker-app\server\out\server.dll
-C:\Users\Emil\Desktop\docker-app\server\out\server.deps.json
-C:\Users\Emil\Desktop\docker-app\server\out\server.runtimeconfig.json
-C:\Users\Emil\Desktop\docker-app\server\out\server.pdb
