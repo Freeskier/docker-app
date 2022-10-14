@@ -2,6 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
+using Application.Common.Interfaces;
 
 namespace Infrastructure;
 
@@ -15,6 +16,7 @@ public static class DependencyInjection
             options.UseSqlServer(
                 configuration.GetConnectionString("Database"), 
                 opt => opt.MigrationsAssembly(typeof(DependencyInjection).Namespace)));
+        services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 
         return services;
     }
