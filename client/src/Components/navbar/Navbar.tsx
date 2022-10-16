@@ -6,6 +6,7 @@ export default function Navbar() {
     <nav className={styles.container}>
       <div className={styles.background}></div>
       Navbar
+      {import.meta.env.VITE_TITLE}
     </nav>
   );
 }

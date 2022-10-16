@@ -17,7 +17,9 @@ public static class WebApplicationExtensions
         }
     } 
 
-    public static async Task ApplySeed(this WebApplication app, CancellationToken cancellationToken = default)
+    public static async Task ApplySeed(
+        this WebApplication app, 
+        CancellationToken cancellationToken = default)
     {
         if(app.Environment.IsDevelopment()) 
         {

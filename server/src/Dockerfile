@@ -1,5 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine as build-env
-
+FROM mcr.microsoft.com/dotnet/sdk:6.0-bullseye-slim as build
 WORKDIR /app
 
 COPY ["/API/API.csproj", "app/API/"]
@@ -9,18 +8,14 @@ COPY ["/Application/Application.csproj", "app/Application/"]
 
 RUN dotnet restore "app/API/API.csproj"
 
-COPY . .
+COPY . ./
 
 WORKDIR "/app/API/"
+RUN dotnet publish -c Release -o out
 
-RUN dotnet publish -c Release -o /app/publish
-
-FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine
-
+FROM mcr.microsoft.com/dotnet/aspnet:6.0-bullseye-slim
 WORKDIR /app
 
-COPY --from=build-env /app/publish .
+COPY --from=build /app/API/out .
 
-EXPOSE 5000
-
-ENTRYPOINT [ "dotnet", "api.dll" ]
+ENTRYPOINT [ "dotnet", "API.dll" ]

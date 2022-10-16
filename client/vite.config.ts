@@ -7,7 +7,7 @@ export default defineConfig(({ command, mode }) => {
 
   return {
     server: {
-      //host: '0.0.0.0',
+      host: '0.0.0.0',
       port: parseInt(env.VITE_APP_PORT),
       // proxy: {
       //   '/api': {
